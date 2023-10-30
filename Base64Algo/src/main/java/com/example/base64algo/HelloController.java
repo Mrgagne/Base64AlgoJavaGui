@@ -12,5 +12,9 @@ public class HelloController {
     private TextArea encodedStringBox;
     @FXML
     private Button encodeButton;
-    
+
+    @FXML
+    protected void printEncodedString() {
+        encodedStringBox.setText(Main.encode(stringToEncode.getText()));
+    }
 }

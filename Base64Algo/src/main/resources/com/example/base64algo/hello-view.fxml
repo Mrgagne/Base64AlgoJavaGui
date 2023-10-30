@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.base64algo.HelloController">
    <children>
       <GridPane prefHeight="956.0" prefWidth="1000.0">
         <columnConstraints>
@@ -24,7 +24,7 @@
           <RowConstraints maxHeight="435.0" minHeight="10.0" prefHeight="416.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button fx:id="encodeButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" text="Encode" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <Button fx:id="encodeButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onMouseClicked="#printEncodedString" text="Encode" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <font>
                   <Font size="24.0" />
                </font>
